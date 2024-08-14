@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  font-family: "Comfortaa", sans-serif;
+  height: 500rem;
+}
+
+:root {
+  --teal: #459a8e;
+  --pink: #bf0074;
+}
+
+.nav {
+  display: flex;
+  gap: 5rem;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+
+  font-size: 3rem;
+  align-items: center;
+  padding: 2rem;
+  position: fixed;
+  justify-content: space-around;
+  padding: 0 10%;
+
+  &__logoBox {
+    min-width: 8rem;
+    height: 8rem;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__title {
+    color: var(--teal);
+    font-size: 5rem;
+    font-weight: 700;
+  }
+
+  &__linkBox {
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    width: 100%;
+  }
+  &__link {
+    color: var(--teal);
+
+    font-weight: 700;
+  }
+
+  &__link-pink {
+    color: var(--pink);
+    font-weight: 700;
+  }
+}
