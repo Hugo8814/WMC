@@ -11,9 +11,10 @@ function Header() {
           </h2>
           <div className="header__Btn">
             <button className="header__Btn-BookNow">Book Now</button>
-            <button className="header__Box-Contact us">Treatments</button>
+            <button className="header__Btn-Contact ">Contact us</button>
           </div>
         </div>
+        <div className="curved-container"></div>
       </div>
     </div>
   );

@@ -28,6 +28,7 @@ html {
   position: fixed;
   justify-content: space-around;
   padding: 0 10%;
+  z-index: 1000;
 
   &__logoBox {
     min-width: 8rem;
