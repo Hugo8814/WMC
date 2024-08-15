@@ -17,7 +17,7 @@
     align-items: center;
     color: white;
     flex-direction: column;
-    gap: 5rem;
+    gap: 8rem;
     height: 80%;
 
     &-title {
@@ -40,7 +40,7 @@
       color: white;
       font-family: "Comfortaa", sans-serif;
       font-weight: 700;
-      padding: 1.5rem 4rem;
+      padding: 1.3rem 3rem;
       border: none;
       font-size: 2.5rem;
     }
@@ -48,7 +48,8 @@
     &-Contact {
       font-family: "Comfortaa", sans-serif;
       font-weight: 700;
-      padding: 1.5rem 4rem;
+      padding: 1.3rem 3rem;
+
       border: solid 1px white;
       font-size: 2.5rem;
       color: white;
@@ -60,10 +61,10 @@
 .curved-container {
   content: "";
   position: absolute;
-  bottom: -70px; /* Adjust based on the height of the curve */
+  bottom: -30px; /* Adjust based on the height of the curve */
 
   width: 100%;
-  height: 200px; /* Height of the curve */
+  height: 150px; /* Height of the curve */
   background-color: #ffffff; /* Color of the background outside the curve */
   border-radius: 50% 50% 0% 0% / 55% 59% 0% 0%;
 }
