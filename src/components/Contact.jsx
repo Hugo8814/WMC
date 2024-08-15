@@ -15,7 +15,17 @@ function Contact() {
             <p className="contact__OpenTimes-text">Sunday: Closed</p>
           </div>
           <div className="contact__line"></div>
-          <div className="contact__info"></div>
+          <div className="contact__info">
+            <p className="contact__info-text">
+              Contact us today to book your next appointment.
+            </p>
+            <p className="contact__info-text">Phone number: 01233610050</p>
+            <p className="contact__info-text">or text: 07598952279</p>
+            <p className="contact__info-text">Email: info@welfaremc.co.uk</p>
+            <p className="contact__info-text">
+              address: 59 High street Ashford TN24 8SG
+            </p>
+          </div>
         </div>
       </div>
     </div>

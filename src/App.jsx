@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Reviews from "./components/Reviews";
 import Treatments from "./components/Treatments";
 import Contact from "./components/Contact";
+import Location from "./components/Location";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Treatments />
       <Reviews />
       <Contact />
+      <Location />
     </div>
   );
 }
