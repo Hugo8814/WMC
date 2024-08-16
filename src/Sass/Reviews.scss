@@ -18,8 +18,28 @@
   }
 }
 
-.reviewsFeature {
-  width: 10rem;
-  height: 100%;
-  background-color: orangered;
+.reviews {
+  &__Feature {
+    height: 100%;
+    background-color: rgb(211, 195, 189);
+    width: 150rem;
+  }
+
+  &__card {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__text {
+    height: 100%;
+    display: flex;
+  }
+
+  &__text-titlebox {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
 }
