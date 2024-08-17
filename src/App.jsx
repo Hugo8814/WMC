@@ -5,6 +5,7 @@ import Treatments from "./components/Treatments";
 import Contact from "./components/Contact";
 import Location from "./components/Location";
 import ReviewsFeature from "./components/ReviewsFeature";
+import Api from "./components/api";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <ReviewsFeature />
       <Contact />
       <Location />
+      <Api />
     </div>
   );
 }
