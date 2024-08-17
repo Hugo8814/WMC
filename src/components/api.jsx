@@ -22,6 +22,7 @@ function Api() {
 
     fetchData();
   }, []);
+  console.log(reviews);
   if (error) return <div>Error: {error}</div>;
   if (!reviews) return <div>Loading...</div>;
 
