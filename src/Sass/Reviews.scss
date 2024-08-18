@@ -27,6 +27,8 @@
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    flex-direction: column;
+    gap: 3rem;
   }
 
   &__card {
@@ -43,7 +45,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
 
     &-starbox {
       display: flex;
@@ -106,5 +107,20 @@
     font-size: 1.4rem;
     padding: 1rem;
     border-radius: 0.5rem;
+  }
+}
+
+.swiper {
+  width: 120rem;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+  overflow: hidden;
+  &__reviews {
+    min-width: 24rem;
+    height: fit-content;
+    font-size: 1.4rem;
   }
 }
