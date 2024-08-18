@@ -65,48 +65,6 @@ function ReviewsFeature() {
           voluptatem dolorem et repudiandae facilis nemo atque magni ipsum
           impedit alias, dolores molestiae!
         </div>
-        <div className="swiper__reviews">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sed,
-          aperiam ipsam laudantium exercitationem eveniet officia, error
-          voluptatem dolorem et repudiandae facilis nemo atque magni ipsum
-          impedit alias, dolores molestiae!
-        </div>
-        <div className="swiper__reviews">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sed,
-          aperiam ipsam laudantium exercitationem eveniet officia, error
-          voluptatem dolorem et repudiandae facilis nemo atque magni ipsum
-          impedit alias, dolores molestiae!
-        </div>
-        <div className="swiper__reviews">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sed,
-          aperiam ipsam laudantium exercitationem eveniet officia, error
-          voluptatem dolorem et repudiandae facilis nemo atque magni ipsum
-          impedit alias, dolores molestiae!
-        </div>
-        <div className="swiper__reviews">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sed,
-          aperiam ipsam laudantium exercitationem eveniet officia, error
-          voluptatem dolorem et repudiandae facilis nemo atque magni ipsum
-          impedit alias, dolores molestiae!
-        </div>
-        <div className="swiper__reviews">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sed,
-          aperiam ipsam laudantium exercitationem eveniet officia, error
-          voluptatem dolorem et repudiandae facilis nemo atque magni ipsum
-          impedit alias, dolores molestiae!
-        </div>
-        <div className="swiper__reviews">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sed,
-          aperiam ipsam laudantium exercitationem eveniet officia, error
-          voluptatem dolorem et repudiandae facilis nemo atque magni ipsum
-          impedit alias, dolores molestiae!
-        </div>
-        <div className="swiper__reviews">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sed,
-          aperiam ipsam laudantium exercitationem eveniet officia, error
-          voluptatem dolorem et repudiandae facilis nemo atque magni ipsum
-          impedit alias, dolores molestiae!
-        </div>
       </div>
     </div>
   );
