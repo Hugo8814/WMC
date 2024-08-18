@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 120rem;
+    width: 128rem;
     background-color: #f3f3f3;
     padding: 2rem;
   }
@@ -111,13 +111,47 @@
 }
 
 .swiper {
-  width: 120rem;
+  width: 128rem;
   height: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   overflow: hidden;
+  position: relative;
+  &__btns {
+    display: flex;
+    width: 128rem;
+    align-items: center;
+    gap: 90%;
+
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+
+    &__prev {
+      width: 4rem;
+      height: 4rem;
+      background-color: #454647c1;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      border-radius: 50%;
+    }
+    &__next {
+      width: 4rem;
+      height: 4rem;
+      background-color: #454647c1;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      border-radius: 50%;
+    }
+  }
   &__reviews {
     min-width: 24rem;
     height: fit-content;

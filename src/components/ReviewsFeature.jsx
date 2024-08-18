@@ -43,6 +43,10 @@ function ReviewsFeature() {
       </div>
 
       <div className="swiper">
+        <div className="swiper__btns">
+          <div className="swiper__btns__prev">-</div>
+          <div className="swiper__btns__next">+</div>
+        </div>
         <div className="swiper__reviews">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sed,
           aperiam ipsam laudantium exercitationem eveniet officia, error
