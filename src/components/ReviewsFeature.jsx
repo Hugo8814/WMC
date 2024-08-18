@@ -1,6 +1,6 @@
 import googleImg from "../img/google.png";
-import fullStar from "../img/favorite.png";
-import halfStar from "../img/rating.png";
+
+import Stars from "./Stars";
 
 function ReviewsFeature() {
   return (
@@ -20,21 +20,7 @@ function ReviewsFeature() {
           <div className="reviews__text-starbox">
             <div className="reviews__rating">4.5</div>
             <div className="reviews__stars">
-              <div className="reviews__stars">
-                <img src={fullStar} alt="4.5 stars rating" />
-              </div>
-              <div className="reviews__stars">
-                <img src={fullStar} alt="4.5 stars rating" />
-              </div>
-              <div className="reviews__stars">
-                <img src={fullStar} alt="4.5 stars rating" />
-              </div>
-              <div className="reviews__stars">
-                <img src={fullStar} alt="4.5 stars rating" />
-              </div>
-              <div className="reviews__stars">
-                <img src={halfStar} alt="4.5 stars rating" />
-              </div>
+              <Stars />
             </div>
             <div className="reviews__reviews">(55+)</div>
           </div>
@@ -44,26 +30,27 @@ function ReviewsFeature() {
 
       <div className="swiper">
         <div className="swiper__btns">
-          <div className="swiper__btns__prev">-</div>
-          <div className="swiper__btns__next">+</div>
+          <div className="swiper__btns__prev">{"<"}</div>
+          <div className="swiper__btns__next">{">"}</div>
         </div>
         <div className="swiper__reviews">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sed,
-          aperiam ipsam laudantium exercitationem eveniet officia, error
-          voluptatem dolorem et repudiandae facilis nemo atque magni ipsum
-          impedit alias, dolores molestiae!
-        </div>
-        <div className="swiper__reviews">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sed,
-          aperiam ipsam laudantium exercitationem eveniet officia, error
-          voluptatem dolorem et repudiandae facilis nemo atque magni ipsum
-          impedit alias, dolores molestiae!
-        </div>
-        <div className="swiper__reviews">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sed,
-          aperiam ipsam laudantium exercitationem eveniet officia, error
-          voluptatem dolorem et repudiandae facilis nemo atque magni ipsum
-          impedit alias, dolores molestiae!
+          <div className="swiper__reviews__box">
+            <img
+              className="swiper__reviews__img"
+              src="https://lh3.googleusercontent.com/a/ACg8ocJS5Jfhj0GqNHy7b5NqsMzwssI88AXqSzKR4zjZG66iFVTAiQ=w36-h36-p-rp-mo-br100"
+              alt=""
+            />
+            <div className="swiper__reviews__box-text">
+              <div className="swiper__reviews__box-text-name"> John Doe</div>
+              <div className="swiper__reviews__box-text-date">20 days ago</div>
+            </div>
+          </div>
+          <Stars />
+          <div className="swiper__reviews__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sed,
+            aperiam ipsam laudantium exercitationem eveniet officia, error
+            voluptatem dolorem
+          </div>
         </div>
       </div>
     </div>
