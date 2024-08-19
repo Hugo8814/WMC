@@ -160,5 +160,17 @@
     max-width: 24rem;
     height: fit-content;
     font-size: 2rem;
+    &__box {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 1rem;
+      &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 1.4rem;
+      }
+    }
   }
 }
