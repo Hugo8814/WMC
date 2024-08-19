@@ -1,11 +1,16 @@
 import googleImg from "../img/google.png";
 import Stars from "./Stars";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 
 import verified from "../img/facebook-verified.png";
+import ApiContext from "../components/api";
 
 function ReviewsFeature() {
+  const state = useContext(ApiContext);
   const swiperRef = useRef(null);
+  console.log("State in ReviewsFeature:", state); // Debug: Log the state
+
+  // Check if the data is not yet available
 
   const handleNext = () => {
     if (swiperRef.current) {
@@ -42,11 +47,11 @@ function ReviewsFeature() {
             <div className="reviews__text-title">Reviews</div>
           </div>
           <div className="reviews__text-starbox">
-            <div className="reviews__rating">4.5</div>
+            <div className="reviews__rating">{state.rating}</div>
             <div className="reviews__stars">
               <Stars />
             </div>
-            <div className="reviews__reviews">(55+)</div>
+            <div className="reviews__reviews">({state.reviews.length})</div>
           </div>
         </div>
         <button className="reviews__btn"> Review us on Google</button>
@@ -61,20 +66,19 @@ function ReviewsFeature() {
             {">"}
           </button>
         </div>
-
         {/* Individual review items */}
-        {[...Array(20)].map((_, index) => (
+        {state.reviews.map((review, index) => (
           <div className="swiper__reviews" key={index}>
             <div className="swiper__reviews__box">
               <img
                 className="swiper__reviews__img"
-                src="https://lh3.googleusercontent.com/a/ACg8ocJS5Jfhj0GqNHy7b5NqsMzwssI88AXqSzKR4zjZG66iFVTAiQ=w36-h36-p-rp-mo-br100"
+                src={review.pfp}
                 alt="profile"
               />
               <div className="swiper__reviews__box-text">
                 <div className="swiper__reviews__box-text-name">
                   <div className="swiper__reviews__box-text-name-box">
-                    John Doe
+                    {review.name}
                     <img
                       src={verified}
                       className="swiper__reviews__verified"
@@ -83,17 +87,13 @@ function ReviewsFeature() {
                   </div>
                 </div>
                 <div className="swiper__reviews__box-text-date">
-                  20 days ago
+                  {review.date}
                 </div>
               </div>
             </div>
             <div className="swiper__reviews__Tbox">
               <Stars />
-              <div className="swiper__reviews__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-                sed, aperiam ipsam laudantium exercitationem eveniet officia,
-                error voluptatem dolorem.
-              </div>
+              <div className="swiper__reviews__text">{review.text}</div>
             </div>
           </div>
         ))}

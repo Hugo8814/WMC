@@ -5,11 +5,11 @@ import Treatments from "./components/Treatments";
 import Contact from "./components/Contact";
 import Location from "./components/Location";
 import ReviewsFeature from "./components/ReviewsFeature";
-import Api from "./components/api";
+import { ApiProvider } from "./components/api";
 
 function App() {
   return (
-    <div>
+    <ApiProvider>
       <Nav />
       <Header />
       <Treatments />
@@ -17,8 +17,7 @@ function App() {
       <ReviewsFeature />
       <Contact />
       <Location />
-      <Api />
-    </div>
+    </ApiProvider>
   );
 }
 
