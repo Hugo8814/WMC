@@ -73,7 +73,7 @@ function ReviewsFeature() {
           <div className="reviews__text-starbox">
             <div className="reviews__rating">{state.rating}</div>
             <div className="reviews__stars">
-              <Stars />
+              <Stars half={true} />
             </div>
             <div className="reviews__reviews">(60+)</div>
           </div>
