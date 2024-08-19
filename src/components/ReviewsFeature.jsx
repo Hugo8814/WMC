@@ -1,16 +1,32 @@
 import googleImg from "../img/google.png";
 import Stars from "./Stars";
-import { useContext, useRef } from "react";
-
+import { useEffect, useRef, useState } from "react";
 import verified from "../img/facebook-verified.png";
-import ApiContext from "../components/api";
 
 function ReviewsFeature() {
-  const state = useContext(ApiContext);
   const swiperRef = useRef(null);
-  console.log("State in ReviewsFeature:", state); // Debug: Log the state
+  const [state, setState] = useState(null); // Initialize state as null
+  const [loading, setLoading] = useState(true); // Loading state to manage the fetch
 
-  // Check if the data is not yet available
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const res = await fetch("http://localhost:3001/result");
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        const data = await res.json();
+        setState(data);
+      } catch (error) {
+        console.error("Fetch error:", error);
+        setState(null); // In case of error, set state to null
+      } finally {
+        setLoading(false); // Stop loading once fetch is done
+      }
+    }
+
+    fetchData();
+  }, []);
 
   const handleNext = () => {
     if (swiperRef.current) {
@@ -32,6 +48,14 @@ function ReviewsFeature() {
     }
   };
 
+  if (loading) {
+    return <div>Loading...</div>; // Render loading state
+  }
+
+  if (!state) {
+    return <div>Error loading reviews.</div>; // Render error state
+  }
+
   return (
     <div className="reviews__Feature">
       <div className="reviews__card">
@@ -51,10 +75,10 @@ function ReviewsFeature() {
             <div className="reviews__stars">
               <Stars />
             </div>
-            <div className="reviews__reviews">({state.reviews.length})</div>
+            <div className="reviews__reviews">(60+)</div>
           </div>
         </div>
-        <button className="reviews__btn"> Review us on Google</button>
+        <button className="reviews__btn">Review us on Google</button>
       </div>
 
       <div className="swiper" ref={swiperRef}>
@@ -66,7 +90,7 @@ function ReviewsFeature() {
             {">"}
           </button>
         </div>
-        {/* Individual review items */}
+
         {state.reviews.map((review, index) => (
           <div className="swiper__reviews" key={index}>
             <div className="swiper__reviews__box">
@@ -87,7 +111,7 @@ function ReviewsFeature() {
                   </div>
                 </div>
                 <div className="swiper__reviews__box-text-date">
-                  {review.date}
+                  {review.time}
                 </div>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import logoImg from "../img/logo.jpg";
+
 function Nav() {
   return (
     <nav className="nav">

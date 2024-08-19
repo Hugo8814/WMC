@@ -116,7 +116,7 @@
   height: 100%;
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   gap: 2rem;
   overflow-x: auto;
   scrollbar-width: none;
@@ -170,6 +170,11 @@
     background-color: #f3f3f3;
     border-radius: 1rem;
 
+    &__img {
+      width: 4rem;
+      height: 4rem;
+    }
+
     &__verified {
       width: 1.5rem;
     }
@@ -198,6 +203,7 @@
 
         &-name {
           font-weight: 700;
+
           &-box {
             display: flex;
             align-items: center;
