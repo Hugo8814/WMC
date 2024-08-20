@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import fullStar from "../img/favorite.png";
 import halfStar from "../img/rating.png";
 function Stars({ half = false }) {
