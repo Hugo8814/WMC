@@ -17,6 +17,7 @@ function ReviewsFeature() {
         }
         const data = await res.json();
         setState(data);
+        console.log(data);
       } catch (error) {
         console.error("Fetch error:", error);
         setState(null); // In case of error, set state to null
