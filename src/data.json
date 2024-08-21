@@ -6,18 +6,84 @@
     "reviews": [
       {
         "name": "Patric Nutton",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjWRFj9Db4BbvQS5ctGW-x9V6Ime93LJO_NGykcN89J1v7N5_gZ9LA=w36-h36-p-rp-mo-br100",
+        "pfp": "/src/pfp/patric.png",
         "rating": 5,
         "time": "2 months ago",
         "text": "Wonderful! So many tensions released today by Ghislaine an experienced masseuse who analyses and adapts the massage to areas with the tightest muscles and is kind and patient and uses the time well - definitely not rushed. Left the centre feeling sooo relaxed, walking into space..."
       },
       {
+        "name": "reshma parmar",
+        "pfp": "src/pfp/reshmaparmar.png",
+        "rating": 5,
+        "time": "9 months ago",
+        "text": "I had a wonderful facial and a massage this morning!\nMisha was great made me feel very relaxed and at ease!\nClean environment! Friendly team\nWill be back again!"
+      },
+      {
+        "name": "Joanne Kissick-Jones",
+        "pfp": "/src/pfp/jonna.png",
+        "rating": 5,
+        "time": "9 months ago",
+        "text": "I have always received a good massage at the Walfare Massage Centre."
+      },
+      {
+        "name": "dan east",
+        "pfp": "/src/pfp/daneast.png",
+        "rating": 5,
+        "time": "a year ago",
+        "text": "best massage  ive had Afterwards, I felt completely refreshed and rejuvenated. I can't wait to book next month and experience this amazing massage again. I highly recommend this spa to anyone looking for a relaxing and rejuvenating experience. It's definitely worth the five-star rating!"
+      },
+
+      {
+        "name": "Kennes Modesto",
+        "pfp": "/src/pfp/Kennesmodesto.png",
+        "rating": 5,
+        "time": "a year ago",
+        "text": "Simply the best massage I have ever had. Gislane I am delighted with your professionalism, your friendliness… much success always! 😍❤️"
+      },
+      {
+        "name": "ketlyn fonseca",
+        "pfp": "/src/pfp/ketlyn.png",
+        "rating": 5,
+        "time": "a year ago",
+        "text": "Anyone who knows all the benefits of a good massage session wouldn't trade it for anything in the world. thank you Gislaine for the best massage, i'm feeling wonderful. Great service, very cozy atmosphere, I loved it . I'm already looking forward to my next massage "
+      },
+      {
+        "name": "Alice Bentley",
+        "pfp": "/src/pfp/alicebentley.png",
+        "rating": 5,
+        "time": "a year ago",
+        "text": "Misha was amazing my massage and facial felt wonderful. Definitely upped their massage style and techniques. I went for a facial and fell a sleep it was that good. My skin is glowing. My skin feels amazing I love Dermolgica and use the range at home. Far better experience than other options for spa treatments in Ashford I've tried them all. I really love this place and feel it's amazing value for money.Keep it up ladies. Such a wonderful place in Ashford. ❤️"
+      },
+      {
+        "name": "temp",
+        "pfp": "/src/pfp/alice.png",
+        "rating": 5,
+        "time": "temp",
+        "text": "temp"
+      },
+      {
+        "name": "temp",
+        "pfp": "/src/pfp/alice.png",
+        "rating": 5,
+        "time": "temp",
+        "text": "temp"
+      },
+      {
+        "name": "temp",
+        "pfp": "/src/pfp/alice.png",
+        "rating": 5,
+        "time": "temp",
+        "text": "temp"
+      },
+      {
         "name": "running man",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjX4VrHuMcbsWpvCFWyAT-bw4qyzOCqCZwp2CmzVc2-JYzhhmBYt=s128-c0x00000000-cc-rp-mo",
+        "pfp": "/src/pfp/runningman.png",
+
         "rating": 5,
         "time": "5 months ago",
         "text": "Second visit with Gislaine and she managed to find all my knots and got them out whilst still being very relaxing. Fantastic massage and I would highly recommend 👌"
       },
+
       {
         "name": "Chez Kay",
         "pfp": "https://lh3.googleusercontent.com/a/ACg8ocJ-uKfum2Zv_vyzFpsPUoHs6t1DApL-IOjGHQ11JnjsHGiZFg=s128-c0x00000000-cc-rp-mo",
@@ -32,129 +98,66 @@
         "time": "8 months ago",
         "text": "Amazing! Had such a relaxing and rejuvenating experience. Given the best customer service from the minute you arrive and the actual massage and facial were perfect. Left feeling totally refreshed. Thank you!"
       },
-      {
-        "name": "reshma parmar",
-        "pfp": "https://lh3.googleusercontent.com/a/ACg8ocLvEtbf1IyNES58tzDYT-VBld33gG3bjrpqlsg-Uz7ZwkHw=s128-c0x00000000-cc-rp-mo",
-        "rating": 5,
-        "time": "9 months ago",
-        "text": "I had a wonderful facial and a massage this morning!\nMisha was great made me feel very relaxed and at ease!\nClean environment! Friendly team\nWill be back again!"
-      },
-      {
-        "name": "Joanne Kissick-Jones",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
-        "rating": 5,
-        "time": "9 months ago",
-        "text": "I have always received a good massage at the Walfare Massage Centre."
-      },
-      {
-        "name": "dan east",
-        "pfp": "https://lh3.googleusercontent.com/a/ACg8ocKW01n8dm6mXADV4Grw4RVUWXjjedDAmHGWPrnV0biTCwMnmA=w60-h60-p-rp-mo-br100",
-        "rating": 5,
-        "time": "a year ago",
-        "text": "best massage  ive had Afterwards, I felt completely refreshed and rejuvenated. I can't wait to book next month and experience this amazing massage again. I highly recommend this spa to anyone looking for a relaxing and rejuvenating experience. It's definitely worth the five-star rating!"
-      },
 
       {
         "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
+        "pfp": "/src/pfp/alice.png",
         "rating": 5,
         "time": "temp",
         "text": "temp"
       },
       {
         "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
+        "pfp": "/src/pfp/alice.png",
         "rating": 5,
         "time": "temp",
         "text": "temp"
       },
       {
         "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
+        "pfp": "/src/pfp/alice.png",
         "rating": 5,
         "time": "temp",
         "text": "temp"
       },
       {
         "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
+        "pfp": "/src/pfp/alice.png",
         "rating": 5,
         "time": "temp",
         "text": "temp"
       },
       {
         "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
+        "pfp": "/src/pfp/alice.png",
         "rating": 5,
         "time": "temp",
         "text": "temp"
       },
       {
         "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
+        "pfp": "/src/pfp/alice.png",
         "rating": 5,
         "time": "temp",
         "text": "temp"
       },
       {
         "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
+        "pfp": "/src/pfp/alice.png",
         "rating": 5,
         "time": "temp",
         "text": "temp"
       },
       {
         "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
+        "pfp": "/src/pfp/alice.png",
         "rating": 5,
         "time": "temp",
         "text": "temp"
       },
       {
         "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
-        "rating": 5,
-        "time": "temp",
-        "text": "temp"
-      },
-      {
-        "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
-        "rating": 5,
-        "time": "temp",
-        "text": "temp"
-      },
-      {
-        "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
-        "rating": 5,
-        "time": "temp",
-        "text": "temp"
-      },
-      {
-        "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
-        "rating": 5,
-        "time": "temp",
-        "text": "temp"
-      },
-      {
-        "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
-        "rating": 5,
-        "time": "temp",
-        "text": "temp"
-      },
-      {
-        "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
-        "rating": 5,
-        "time": "temp",
-        "text": "temp"
-      },
-      {
-        "name": "temp",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjUTwqot5nAeb1AU-VIX0gFzYawCwoANXjI-aOvh6879fEm9ohXO=w36-h36-p-rp-mo-ba3-br100",
+        "pfp": "/src/pfp/alice.png",
         "rating": 5,
         "time": "temp",
         "text": "temp"

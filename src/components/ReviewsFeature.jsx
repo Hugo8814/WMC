@@ -98,7 +98,7 @@ function ReviewsFeature() {
               <img
                 className="swiper__reviews__img"
                 src={review.pfp}
-                alt="profile"
+                alt="profile pic"
               />
               <div className="swiper__reviews__box-text">
                 <div className="swiper__reviews__box-text-name">
