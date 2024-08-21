@@ -23,14 +23,48 @@
 
 .map {
   width: 100%;
-  height: 100vh;
-
+  height: 100%;
+  position: relative;
   &__img {
     width: 100%;
-    height: 100%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 5rem;
     background-image: url(../img/footer.webp);
     background-size: cover;
     background-position: center;
     transform: scaleY(-1);
+
+    /* Gradient overlay */
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        /* Adjust color and opacity */ rgba(0, 0, 0, 0.3)
+          /* Adjust color and opacity */
+      );
+      z-index: 1; /* Make sure the gradient overlay is above the image */
+    }
+
+    /* Ensure content is above the gradient */
+    > * {
+      position: relative;
+      z-index: 2;
+    }
   }
+}
+
+iframe {
+  width: 90%;
+  transform: scaleY(-1) !important; /* Ensure iframe is vertically flipped */
+  filter: brightness(1) contrast(1) !important; /* Default values for iframe */
 }
