@@ -5,6 +5,13 @@
     "rating": 4.5,
     "reviews": [
       {
+        "name": "Joanne Kissick-Jones",
+        "pfp": "/src/pfp/jonna.png",
+        "rating": 5,
+        "time": "9 months ago",
+        "text": "I have always received a good massage at the Walfare Massage Centre."
+      },
+      {
         "name": "Patric Nutton",
         "pfp": "/src/pfp/patric.png",
         "rating": 5,
@@ -18,13 +25,7 @@
         "time": "9 months ago",
         "text": "I had a wonderful facial and a massage this morning!\nMisha was great made me feel very relaxed and at ease!\nClean environment! Friendly team\nWill be back again!"
       },
-      {
-        "name": "Joanne Kissick-Jones",
-        "pfp": "/src/pfp/jonna.png",
-        "rating": 5,
-        "time": "9 months ago",
-        "text": "I have always received a good massage at the Walfare Massage Centre."
-      },
+
       {
         "name": "dan east",
         "pfp": "/src/pfp/daneast.png",
@@ -48,33 +49,42 @@
         "text": "Anyone who knows all the benefits of a good massage session wouldn't trade it for anything in the world. thank you Gislaine for the best massage, i'm feeling wonderful. Great service, very cozy atmosphere, I loved it . I'm already looking forward to my next massage "
       },
       {
+        "name": "Colin Hustwayte",
+        "pfp": "/src/pfp/colin.png",
+        "rating": 5,
+        "time": "10 months ago",
+        "text": "Great massage very relaxing, looking forward to seeing you again soon."
+      },
+      {
         "name": "Alice Bentley",
         "pfp": "/src/pfp/alicebentley.png",
         "rating": 5,
         "time": "a year ago",
         "text": "Misha was amazing my massage and facial felt wonderful. Definitely upped their massage style and techniques. I went for a facial and fell a sleep it was that good. My skin is glowing. My skin feels amazing I love Dermolgica and use the range at home. Far better experience than other options for spa treatments in Ashford I've tried them all. I really love this place and feel it's amazing value for money.Keep it up ladies. Such a wonderful place in Ashford. ❤️"
       },
+
       {
-        "name": "temp",
-        "pfp": "/src/pfp/alice.png",
+        "name": "Claire Salter",
+        "pfp": "/src/pfp/claire.png",
         "rating": 5,
-        "time": "temp",
-        "text": "temp"
+        "time": "5 years ago",
+        "text": "Been here twice now for a massage. What an experience, made to feel welcome by the staff who are so friendly, and the massage was wonderful, so relaxing I am most certain I drifted off to another place. Deffinately worth a visit. My next one is already booked."
       },
       {
-        "name": "temp",
-        "pfp": "/src/pfp/alice.png",
+        "name": "Sarah Wills",
+        "pfp": "/src/pfp/sarahwills.png",
         "rating": 5,
-        "time": "temp",
-        "text": "temp"
+        "time": "2 months ago",
+        "text": "lovely, totally relaxing experience"
       },
       {
-        "name": "temp",
-        "pfp": "/src/pfp/alice.png",
+        "name": "Michelle Feline",
+        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjWBFesULUk--GNkiAud8xKpVBBru1jvw_hcvZHFxZWPMiLi8WKJ=s128-c0x00000000-cc-rp-mo-ba5",
         "rating": 5,
-        "time": "temp",
-        "text": "temp"
+        "time": "8 months ago",
+        "text": "Amazing! Had such a relaxing and rejuvenating experience. Given the best customer service from the minute you arrive and the actual massage and facial were perfect. Left feeling totally refreshed. Thank you!"
       },
+
       {
         "name": "running man",
         "pfp": "/src/pfp/runningman.png",
@@ -92,75 +102,55 @@
         "text": "I’ve just had my third massage here. A perfect hour of calm and peace for the soul. Sensory top notes to ease you as you settle down for magical hands on a heated bed. I pointed out my concern areas and they were soothe away for another month.\nI love it here at the Centre and will definitely recommend to anyone who asks - and even those who don’t! Thank you!"
       },
       {
-        "name": "Michelle Feline",
-        "pfp": "https://lh3.googleusercontent.com/a-/ALV-UjWBFesULUk--GNkiAud8xKpVBBru1jvw_hcvZHFxZWPMiLi8WKJ=s128-c0x00000000-cc-rp-mo-ba5",
+        "name": "Kev Stone",
+        "pfp": "/src/pfp/kev.png",
         "rating": 5,
-        "time": "8 months ago",
-        "text": "Amazing! Had such a relaxing and rejuvenating experience. Given the best customer service from the minute you arrive and the actual massage and facial were perfect. Left feeling totally refreshed. Thank you!"
+        "time": "3 months ago",
+        "text": "Lovely massage, Not rushed, Great value definitely going again"
       },
 
       {
-        "name": "temp",
-        "pfp": "/src/pfp/alice.png",
+        "name": "stephen gregory",
+        "pfp": "/src/pfp/stephen.png",
         "rating": 5,
-        "time": "temp",
-        "text": "temp"
+        "time": "2 years ago",
+        "text": "Very friendly and professional. A great massage, so relaxed afterwards. Even though it was cold they were happy to open a window for me during my massage. I have already booked my next massage and will go back on a regular basis. Probably the most relaxing massage I've had in Ashford"
       },
       {
-        "name": "temp",
-        "pfp": "/src/pfp/alice.png",
+        "name": "Emma Foster-Geering",
+        "pfp": "/src/pfp/emma.png",
         "rating": 5,
-        "time": "temp",
-        "text": "temp"
+        "time": "a year ago",
+        "text": "Incredible pre natal massage. Loved the service, warm beds, comfy towels and pillows. Super impressed ❤️"
+      },
+
+      {
+        "name": "Sarah Gibbs",
+        "pfp": "/src/pfp/sarah.png",
+        "rating": 5,
+        "time": "2 years ago",
+        "text": "I was gifted a facial and massage at Welfare Massage. I’m not usually a big fan as I am sensitive skinned and usually leave looking like a tomato. But I have to say this was the most relaxing experience. I’m sure I drifted off to sleep at one point. It was really impressed and would 100% recommend, I will be back."
       },
       {
-        "name": "temp",
-        "pfp": "/src/pfp/alice.png",
+        "name": "Katie Dowling",
+        "pfp": "/src/pfp/katie.png",
         "rating": 5,
-        "time": "temp",
-        "text": "temp"
+        "time": "a year ago",
+        "text": "I love this place. Amazing staff and massage"
       },
       {
-        "name": "temp",
-        "pfp": "/src/pfp/alice.png",
+        "name": "Jodee Furlong",
+        "pfp": "/src/pfp/jodee.png",
         "rating": 5,
-        "time": "temp",
-        "text": "temp"
+        "time": "2 years ago",
+        "text": "So so relaxing, went for a massage here today and I've never felt so relaxed. Will definitely be booking again soon. And the prices are so reasonable too."
       },
       {
-        "name": "temp",
-        "pfp": "/src/pfp/alice.png",
+        "name": "Greg P",
+        "pfp": "/src/pfp/greg.png",
         "rating": 5,
-        "time": "temp",
-        "text": "temp"
-      },
-      {
-        "name": "temp",
-        "pfp": "/src/pfp/alice.png",
-        "rating": 5,
-        "time": "temp",
-        "text": "temp"
-      },
-      {
-        "name": "temp",
-        "pfp": "/src/pfp/alice.png",
-        "rating": 5,
-        "time": "temp",
-        "text": "temp"
-      },
-      {
-        "name": "temp",
-        "pfp": "/src/pfp/alice.png",
-        "rating": 5,
-        "time": "temp",
-        "text": "temp"
-      },
-      {
-        "name": "temp",
-        "pfp": "/src/pfp/alice.png",
-        "rating": 5,
-        "time": "temp",
-        "text": "temp"
+        "time": "6 years ago",
+        "text": "Excellent addition to a developing town...... Gislaine, Melissa and Gracie keep up the good work. I'll see you in September. Feeling totally energised for the day ahead and looking forwards to my next visit. Well worth the value for money but the service is definately 6*!"
       }
     ]
   },
