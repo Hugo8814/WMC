@@ -4,7 +4,7 @@ import Reviews from "./components/Reviews";
 import Treatments from "./components/Treatments";
 import Contact from "./components/Contact";
 import Location from "./components/Location";
-// import ReviewsFeature from "./components/ReviewsFeature";
+import ReviewsFeature from "./components/ReviewsFeature";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Treatments />
       <Reviews />
       {/* <ReviewsFeature /> */}
-      <Contact />
+      {/* <Contact /> */}
       <Location />
     </>
   );
