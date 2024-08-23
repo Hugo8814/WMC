@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Treatments />
       <Reviews />
-      {/* <ReviewsFeature /> */}
+      <ReviewsFeature />
       <Contact />
       <Location />
     </>
