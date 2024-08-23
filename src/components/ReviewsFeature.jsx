@@ -5,19 +5,19 @@ import verified from "../img/facebook-verified.png";
 
 function ReviewsFeature() {
   const swiperRef = useRef(null);
-  const [state, setState] = useState(null); // Initialize state as null
-  const [loading, setLoading] = useState(true); // Loading state to manage the fetch
+  const [state, setState] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch("http://localhost:3001/result");
+        const res = await fetch("https://hugo8814.github.io/modal/data.json");
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
         }
         const data = await res.json();
-        setState(data);
-        console.log(data);
+        setState(data.result); // Assuming the JSON structure has a "result" key
+        console.log(data.result); // Log the fetched result to ensure correctness
       } catch (error) {
         console.error("Fetch error:", error);
         setState(null); // In case of error, set state to null
@@ -50,11 +50,11 @@ function ReviewsFeature() {
   };
 
   if (loading) {
-    return <div>Loading...</div>; // Render loading state
+    return <div>Loading...</div>;
   }
 
   if (!state) {
-    return <div>Error loading reviews.</div>; // Render error state
+    return <div>Error loading reviews.</div>;
   }
 
   return (
@@ -108,7 +108,7 @@ function ReviewsFeature() {
                       <img
                         src={verified}
                         className="swiper__reviews__verified"
-                        alt="google logo"
+                        alt="verified logo"
                       />
                     </div>
                   </div>
@@ -118,7 +118,7 @@ function ReviewsFeature() {
                 </div>
               </div>
               <div className="swiper__reviews__Tbox">
-                <Stars />
+                <Stars rating={review.rating} />
                 <div className="swiper__reviews__text">{review.text}</div>
               </div>
             </div>
