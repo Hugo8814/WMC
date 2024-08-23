@@ -255,6 +255,7 @@
     &__verified {
       width: 1.5rem;
       @media (max-width: 425px) {
+        width: 1.3rem;
       }
     }
 
@@ -282,6 +283,7 @@
 
         &-name {
           font-weight: 700;
+          text-wrap: nowrap;
 
           &-box {
             display: flex;
