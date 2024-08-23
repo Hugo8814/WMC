@@ -8,6 +8,15 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    @media (max-width: 1024px) {
+      height: 10rem;
+    }
+    @media (max-width: 768px) {
+      height: 8rem;
+    }
+    @media (max-width: 425px) {
+      height: 6rem;
+    }
 
     &-text {
       font-size: 7rem;
@@ -17,6 +26,15 @@
       background-size: cover;
       -webkit-background-clip: text; /* For webkit browsers */
       background-clip: text; /* Standard property */
+      @media (max-width: 1024px) {
+        font-size: 6rem;
+      }
+      @media (max-width: 768px) {
+        font-size: 5rem;
+      }
+      @media (max-width: 425px) {
+        font-size: 4rem;
+      }
     }
   }
 }
