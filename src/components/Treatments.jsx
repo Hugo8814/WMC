@@ -103,7 +103,10 @@ function Treatments() {
           <div className="grid__item__imgBox">
             <img className="grid__item-img" src={img1} />
           </div>
-          <div className="grid__item-title">Back, Neck & Shoulders</div>
+          <div className="grid__item-title">
+            Back, Neck & <br />
+            Shoulders
+          </div>
           <div className="grid__item-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure
             quas magni unde nemo nesciunt cupiditate neque quisquam! Totam dicta
