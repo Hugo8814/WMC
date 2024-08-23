@@ -4,6 +4,7 @@ import img3 from "../img/img3.webp";
 import img4 from "../img/img4.webp";
 import img5 from "../img/img5.webp";
 import img6 from "../img/img6.png";
+//new names
 
 function Treatments() {
   return (
