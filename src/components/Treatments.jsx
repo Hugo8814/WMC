@@ -1,7 +1,7 @@
 import img1 from "../img/img1.webp";
 import img2 from "../img/img2.webp";
 import img3 from "../img/img3.webp";
-import img4 from "../img/img4.webp";
+//import img4 from "../img/img4.webp";
 import img5 from "../img/img5.webp";
 import img6 from "../img/img6.png";
 //new names
@@ -64,7 +64,7 @@ function Treatments() {
 
         <div className="grid__item">
           <div className="grid__item__imgBox">
-            <img className="grid__item-img" src={img4} />
+            <img className="grid__item-img" src={img3} />
           </div>
           <div className="grid__item-title">Deep Tissue</div>
           <div className="grid__item-description">
