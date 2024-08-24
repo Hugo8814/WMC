@@ -3,6 +3,51 @@ import Stars from "./Stars";
 import { useEffect, useRef, useState } from "react";
 import verified from "../img/facebook-verified.png";
 
+// Importing images
+import jonna from "../pfp/jonna.png";
+import patric from "../pfp/patric.png";
+import kev from "../pfp/kev.png";
+import alicebentley from "../pfp/alicebentley.png";
+import colin from "../pfp/colin.png";
+import chez from "../pfp/chez.png";
+import claire from "../pfp/claire.png";
+import daneast from "../pfp/daneast.png";
+import reshmaparmar from "../pfp/reshmaparmar.png";
+import emma from "../pfp/emma.png";
+import greg from "../pfp/greg.png";
+import jodee from "../pfp/jodee.png";
+import katie from "../pfp/katie.png";
+import Kennesmodesto from "../pfp/Kennesmodesto.png";
+import ketlyn from "../pfp/ketlyn.png";
+import michelle from "../pfp/michelle.png";
+import runningman from "../pfp/runningman.png";
+import sarah from "../pfp/sarah.png";
+import sarahwills from "../pfp/sarahwills.png";
+import stephen from "../pfp/stephen.png";
+
+const imageMap = {
+  jonna,
+  patric,
+  kev,
+  alicebentley,
+  colin,
+  chez,
+  claire,
+  daneast,
+  reshmaparmar,
+  emma,
+  greg,
+  jodee,
+  katie,
+  Kennesmodesto,
+  ketlyn,
+  michelle,
+  runningman,
+  sarah,
+  sarahwills,
+  stephen,
+};
+
 function ReviewsFeature() {
   const swiperRef = useRef(null);
   const [state, setState] = useState(null);
@@ -16,13 +61,19 @@ function ReviewsFeature() {
           throw new Error(`HTTP error! status: ${res.status}`);
         }
         const data = await res.json();
-        setState(data.result); // Assuming the JSON structure has a "result" key
-        console.log(data.result); // Log the fetched result to ensure correctness
+
+        // Map images based on filenames without extensions
+        const reviewsWithImages = data.result.reviews.map((review) => {
+          const profileImg = imageMap[review.pfp] || null; // Use imageMap to resolve image path
+          return { ...review, profileImg };
+        });
+
+        setState({ ...data.result, reviews: reviewsWithImages });
       } catch (error) {
         console.error("Fetch error:", error);
-        setState(null); // In case of error, set state to null
+        setState(null);
       } finally {
-        setLoading(false); // Stop loading once fetch is done
+        setLoading(false);
       }
     }
 
@@ -30,23 +81,19 @@ function ReviewsFeature() {
   }, []);
 
   const handleNext = () => {
-    if (swiperRef.current) {
-      swiperRef.current.scrollBy({
-        top: 0,
-        left: 260, // 24rem = 240px
-        behavior: "smooth",
-      });
-    }
+    swiperRef.current?.scrollBy({
+      top: 0,
+      left: 260,
+      behavior: "smooth",
+    });
   };
 
   const handlePrev = () => {
-    if (swiperRef.current) {
-      swiperRef.current.scrollBy({
-        top: 0,
-        left: -260, // 24rem = 240px
-        behavior: "smooth",
-      });
-    }
+    swiperRef.current?.scrollBy({
+      top: 0,
+      left: -260,
+      behavior: "smooth",
+    });
   };
 
   if (loading) {
@@ -67,7 +114,7 @@ function ReviewsFeature() {
                 <img
                   className="reviews__text-logo-img"
                   src={googleImg}
-                  alt="logo"
+                  alt="Google Reviews"
                 />
               </div>
               <div className="reviews__text-title">Reviews</div>
@@ -96,11 +143,13 @@ function ReviewsFeature() {
           {state.reviews.map((review, index) => (
             <div className="swiper__reviews" key={index}>
               <div className="swiper__reviews__box">
-                <img
-                  className="swiper__reviews__img"
-                  src={review.pfp}
-                  alt="profile pic"
-                />
+                {review.profileImg && (
+                  <img
+                    className="swiper__reviews__img"
+                    src={review.profileImg}
+                    alt={`${review.name}'s profile`}
+                  />
+                )}
                 <div className="swiper__reviews__box-text">
                   <div className="swiper__reviews__box-text-name">
                     <div className="swiper__reviews__box-text-name-box">
@@ -108,7 +157,7 @@ function ReviewsFeature() {
                       <img
                         src={verified}
                         className="swiper__reviews__verified"
-                        alt="verified logo"
+                        alt="Verified"
                       />
                     </div>
                   </div>
