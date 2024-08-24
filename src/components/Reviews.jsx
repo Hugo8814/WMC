@@ -1,6 +1,6 @@
 function Reviews() {
   return (
-    <div className="reviews">
+    <div className="reviews" id="reviews">
       <div className="reviews__header">Reviews</div>
     </div>
   );

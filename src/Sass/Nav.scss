@@ -57,6 +57,7 @@
     font-size: 5rem;
     font-weight: 700;
     text-wrap: nowrap;
+    text-decoration: none;
     @media (max-width: 1550px) {
       font-size: 4rem;
     }
@@ -87,6 +88,10 @@
     color: var(--teal);
     font-weight: 700;
     width: fit-content;
+    text-decoration: none;
+    &:hover {
+      color: var(--pink);
+    }
     @media (max-width: 800px) {
       font-size: 1.6rem;
     }
@@ -95,14 +100,16 @@
     }
   }
 
-  &__link-pink {
-    color: var(--pink);
-    font-weight: 700;
-    @media (max-width: 800px) {
-      font-size: 1.6rem;
-    }
-    @media (max-width: 600px) {
-      display: none;
-    }
-  }
+  // &__link-pink {
+  //   text-decoration: none;
+
+  //   color: var(--pink);
+  //   font-weight: 700;
+  //   @media (max-width: 800px) {
+  //     font-size: 1.6rem;
+  //   }
+  //   @media (max-width: 600px) {
+  //     display: none;
+  //   }
+  // }
 }

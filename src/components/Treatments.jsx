@@ -8,7 +8,7 @@ import img6 from "../img/img6.png";
 
 function Treatments() {
   return (
-    <div className="treatments">
+    <div className="treatments" id="treatments">
       <div className="grid">
         <div className="grid__item">
           <div className="grid__item__imgBox">

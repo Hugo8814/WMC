@@ -127,7 +127,12 @@ function ReviewsFeature() {
               <div className="reviews__reviews">(60+)</div>
             </div>
           </div>
-          <button className="reviews__btn">Review us on Google</button>
+          <a
+            href="https://www.google.co.uk/search?q=Welfare+Massage+Centre&sca_esv=573938817b929d14&sca_upv=1&sxsrf=ADLYWIL2iW1gPL_A9pVcsF6O2DWUk7vRFg%3A1724542664575&source=hp&ei=yG7KZtntIIPZhbIPwtvQmAY&iflsig=AL9hbdgAAAAAZsp82LWw3sPRWic-2U16edo1HiNdB6zc&ved=0ahUKEwjZ8a2H5o6IAxWDbEEAHcItFGMQ4dUDCBg&uact=5&oq=Welfare+Massage+Centre&gs_lp=Egdnd3Mtd2l6IhZXZWxmYXJlIE1hc3NhZ2UgQ2VudHJlMgoQIxiABBgnGIoFMhkQLhiABBiSAxjHARgnGMkDGIoFGI4FGK8BMgUQABiABDIFEAAYgAQyBhAAGBYYHjIIEAAYgAQYogRIpQRQ0AFY0AFwAXgAkAEAmAFaoAFaqgEBMbgBA8gBAPgBAvgBAZgCAqACYagCCsICBxAjGCcY6gKYAwWSBwEyoAeJCQ&sclient=gws-wiz&zx=1724542652338&no_sw_cr=1#lrd=0x47dedb9c938e4ad7:0x986ba3f8f482775b,1,,,,"
+            className="reviews__btn"
+          >
+            Review us on Google
+          </a>
         </div>
 
         <div className="swiper" ref={swiperRef}>

@@ -2,8 +2,18 @@ function Bookbtn() {
   return (
     <div className="container">
       <div className="header__Btn">
-        <button className="header__Btn-BookNow">Book Now</button>
-        <button className="header__Btn-Contact ">Contact us</button>
+        <a
+          href="https://www.fresha.com/a/welfare-massage-centre-ashford-59-high-street-lk5oiedp/booking?menu=true"
+          className="header__Btn-BookNow"
+        >
+          Book Now
+        </a>
+        <a
+          href="https://www.fresha.com/a/welfare-massage-centre-ashford-59-high-street-lk5oiedp/booking?menu=true"
+          className="header__Btn-viewall"
+        >
+          View All Treatments
+        </a>
       </div>
     </div>
   );
