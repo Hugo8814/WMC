@@ -5,6 +5,7 @@ import Treatments from "./components/Treatments";
 import Contact from "./components/Contact";
 import Location from "./components/Location";
 import ReviewsFeature from "./components/ReviewsFeature";
+import Bookbtn from "./components/Bookbtn";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Nav />
       <Header />
       <Treatments />
+      <Bookbtn />
       <Reviews />
       <ReviewsFeature />
       <Contact />

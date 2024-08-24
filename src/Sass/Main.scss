@@ -46,7 +46,8 @@ html {
 }
 
 :root {
-  --teal: #459a8e;
+  --teal: #017992;
+
   --pink: #bf0074;
 }
 
@@ -57,3 +58,4 @@ html {
 @import "./Reviews.scss";
 @import "./Treatments.scss";
 @import "./Nav.scss";
+@import "./Bookbtn.scss";
