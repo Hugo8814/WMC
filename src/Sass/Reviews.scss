@@ -42,29 +42,13 @@
     font-family: sans-serif;
     flex-direction: column;
   }
-  &__Box {
-    display: flex;
-    flex-direction: column;
-    width: 68%;
-    overflow: hidden;
-    gap: 2rem;
-    position: relative;
-
-    @media (max-width: 1440px) {
-      width: 70%;
-    }
-
-    @media (max-width: 800px) {
-      width: 90%;
-    }
-  }
 
   &__card {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 68%;
     background-color: #f3f3f3;
     padding: 2rem;
   }
@@ -161,6 +145,27 @@
       padding: 1rem;
     }
   }
+
+  &__Box {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    // overflow-x: auto;
+    gap: 2rem;
+    position: relative;
+    align-items: center;
+
+    @media (max-width: 1440px) {
+      width: 70%;
+    }
+
+    @media (max-width: 800px) {
+      width: 90%;
+    }
+    @media (max-width: 425px) {
+      width: 100%;
+    }
+  }
 }
 
 .swiper {
@@ -170,9 +175,8 @@
   justify-content: start;
   align-items: start;
   gap: 2rem;
-  overflow: hidden;
-
-  scrollbar-width: none;
+  overflow-x: scroll;
+  //scroll-snap-type: x mandatory;
   transition: all 0.4s ease-in-out;
 
   &__btns {
@@ -185,6 +189,9 @@
     height: 50%;
     justify-content: center;
     position: absolute;
+    @media (max-width: 1000px) {
+      display: none;
+    }
     @media (max-width: 425px) {
       gap: 80%;
     }
@@ -237,6 +244,8 @@
     padding: 2rem 3rem;
     background-color: #f3f3f3;
     border-radius: 1rem;
+    scroll-snap-align: start; /* Ensure each review card snaps to start */
+    scroll-snap-stop: always; /* Ensure it fully stops on snap */
 
     @media (max-width: 425px) {
       padding: 1.5rem 1.5rem;
