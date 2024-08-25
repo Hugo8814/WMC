@@ -2,9 +2,9 @@
   padding: 0rem 0rem 0rem 0rem;
   width: 100%;
   height: 100dvh;
-  @media (max-width: 425px) {
-    height: 70dvh;
-  }
+  // @media (max-width: 425px) {
+  //   height: 0dvh;
+  // }
 
   &__img {
     width: 100%;
@@ -71,9 +71,9 @@
   background-color: #ffffff; /* Color of the background outside the curve */
   border-radius: 50% 50% 0% 0% / 55% 59% 0% 0%;
   @media (max-width: 600px) {
-    height: 15rem;
+    height: 13rem;
   }
-  @media (max-width: 425px) {
-    bottom: 25dvb;
-  }
+  // @media (max-width: 425px) {
+  //   bottom: 25dvb;
+  // }
 }
