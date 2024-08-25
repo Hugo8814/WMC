@@ -30,25 +30,26 @@
   }
 
   &__logoBox {
-    min-width: 8rem;
-    height: 8rem;
+    width: 8rem;
+
     @media (max-width: 1250px) {
-      min-width: 6rem;
-      height: 6rem;
+      width: 6rem;
     }
     @media (max-width: 800px) {
-      min-width: 5rem;
-      height: 5rem;
+      width: 5rem;
+
       padding: 0.5rem;
     }
     @media (max-width: 600px) {
-      min-width: 4.5rem;
-      height: 4.5rem;
+      width: 4.5rem;
+    }
+    @media (max-width: 450px) {
+      width: 5rem;
     }
 
     &-img {
       width: 100%;
-      height: 100%;
+      height: auto;
     }
   }
 
