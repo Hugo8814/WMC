@@ -16,10 +16,11 @@ function Treatments() {
           </div>
           <div className="grid__item-title">Swedish Massage</div>
           <div className="grid__item-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure
-            quas magni unde nemo nesciunt cupiditate neque quisquam! Totam dicta
-            expedita aliquid est molestiae iure dolorem dignissimos quas neque
-            nulla.
+            Swedish massage is a classic technique that relaxes the body and
+            mind. It uses long, smooth strokes, kneading, and gentle pressure to
+            relieve tension. This type of massage enhances circulation, eases
+            muscle pain, and promotes overall relaxation. Ideal for those new to
+            massage, it helps reduce stress and fosters a sense of well-being.
           </div>
         </div>
 
