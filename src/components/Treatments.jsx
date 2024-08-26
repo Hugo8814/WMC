@@ -42,10 +42,11 @@ function Treatments() {
           </div>
           <div className="grid__item-title">Lymphatic Drainage</div>
           <div className="grid__item-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure
-            quas magni unde nemo nesciunt cupiditate neque quisquam! Totam dicta
-            expedita aliquid est molestiae iure dolorem dignissimos quas neque
-            nulla.
+            Lymphatic drainage massage stimulates the lymphatic system to
+            enhance fluid flow and reduce swelling. This gentle technique uses
+            light, rhythmic strokes to encourage the removal of toxins and
+            improve circulation. Ideal for reducing bloating and boosting
+            immunity, it promotes overall well-being and a sense of lightness.
           </div>
         </div>
 
@@ -55,10 +56,11 @@ function Treatments() {
           </div>
           <div className="grid__item-title">Aromatherapy</div>
           <div className="grid__item-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure
-            quas magni unde nemo nesciunt cupiditate neque quisquam! Totam dicta
-            expedita aliquid est molestiae iure dolorem dignissimos quas neque
-            nulla.
+            Aromatherapy uses essential oils to enhance physical and emotional
+            well-being. By incorporating soothing scents into massage, it
+            promotes relaxation, reduces stress, and supports mental clarity.
+            Each essential oil offers unique benefits, providing a tailored
+            experience to uplift mood and rejuvenate the senses.
           </div>
         </div>
 
