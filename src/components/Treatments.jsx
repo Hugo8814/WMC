@@ -70,10 +70,11 @@ function Treatments() {
           </div>
           <div className="grid__item-title">Deep Tissue</div>
           <div className="grid__item-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure
-            quas magni unde nemo nesciunt cupiditate neque quisquam! Totam dicta
-            expedita aliquid est molestiae iure dolorem dignissimos quas neque
-            nulla.
+            Deep tissue massage targets the deeper layers of muscles and
+            connective tissue. By applying firm pressure and slow strokes, it
+            helps alleviate chronic pain, reduce muscle tension, and improve
+            flexibility. This technique is ideal for addressing specific areas
+            of discomfort and promoting long-lasting relief.
           </div>
         </div>
 
@@ -83,10 +84,11 @@ function Treatments() {
           </div>
           <div className="grid__item-title">Sports Massage</div>
           <div className="grid__item-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure
-            quas magni unde nemo nesciunt cupiditate neque quisquam! Totam dicta
-            expedita aliquid est molestiae iure dolorem dignissimos quas neque
-            nulla.
+            Sports massage focuses on preventing and treating injuries
+            associated with athletic activities. It combines various techniques
+            to enhance flexibility, reduce muscle soreness, and improve
+            performance. Ideal for athletes and active individuals, it aids in
+            faster recovery and maintains peak physical condition.
           </div>
         </div>
 
@@ -94,12 +96,13 @@ function Treatments() {
           <div className="grid__item__imgBox">
             <img className="grid__item-img" src={img6} />
           </div>
-          <div className="grid__item-title">rock Massage</div>
+          <div className="grid__item-title">Reflexology</div>
           <div className="grid__item-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure
-            quas magni unde nemo nesciunt cupiditate neque quisquam! Totam dicta
-            expedita aliquid est molestiae iure dolorem dignissimos quas neque
-            nulla.
+            Foot massage focuses on relieving tension and improving circulation
+            in the feet. Using gentle pressure and soothing techniques, it helps
+            to reduce stress, alleviate fatigue, and promote relaxation. Ideal
+            for soothing tired feet, this treatment revitalizes and refreshes,
+            offering a comforting escape from daily strain.
           </div>
         </div>
         <div className="grid__item">
@@ -111,10 +114,11 @@ function Treatments() {
             Shoulders
           </div>
           <div className="grid__item-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure
-            quas magni unde nemo nesciunt cupiditate neque quisquam! Totam dicta
-            expedita aliquid est molestiae iure dolorem dignissimos quas neque
-            nulla.
+            A back, neck, and shoulders massage targets common areas of tension
+            and discomfort. This focused therapy uses techniques to relieve
+            muscle tightness, improve circulation, and alleviate stress. Ideal
+            for those experiencing stiffness or soreness, it promotes relaxation
+            and overall well-being.
           </div>
         </div>
       </div>
