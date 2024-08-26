@@ -30,10 +30,9 @@ function Treatments() {
           </div>
           <div className="grid__item-title">Hot Stone Massage</div>
           <div className="grid__item-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure
-            quas magni unde nemo nesciunt cupiditate neque quisquam! Totam dicta
-            expedita aliquid est molestiae iure dolorem dignissimos quas neque
-            nulla.
+            Hot stone massage involves using warm stones to ease muscle tension
+            and promote relaxation. The heat helps improve circulation and
+            relieve stress, offering a soothing and restorative experience.
           </div>
         </div>
 
