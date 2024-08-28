@@ -1,9 +1,11 @@
 .treatments {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 0 10%;
+
   @media (max-width: 1000px) {
     padding: 0 5%;
   }
@@ -25,7 +27,7 @@
     grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
   }
   @media (max-width: 475px) {
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+    grid-template-columns: repeat(1, 30rem);
     gap: 3rem;
   }
 
@@ -52,8 +54,6 @@
       }
 
       @media (max-width: 425px) {
-        width: 12rem;
-        height: 12rem;
       }
     }
 
@@ -78,10 +78,6 @@
       @media (max-width: 475px) {
         font-size: 2rem;
       }
-
-      @media (max-width: 425px) {
-        font-size: 1.8rem;
-      }
     }
 
     &-description {
@@ -93,9 +89,24 @@
       @media (max-width: 475px) {
         font-size: 1.4rem;
       }
-      @media (max-width: 425px) {
-        font-size: 1.3rem;
-      }
     }
+  }
+}
+
+.show-more-btn {
+  text-align: center;
+  display: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--teal);
+  width: 80%;
+  margin: 2rem;
+  border: none;
+
+  text-wrap: nowrap;
+  padding: 1rem 5%;
+
+  @media (max-width: 475px) {
+    display: block;
   }
 }
