@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import img1 from "../img/img1.webp";
 import img2 from "../img/img2.webp";
 import img3 from "../img/img3.webp";
@@ -8,6 +8,8 @@ import deepimg from "../img/deep_tissue.jpg";
 import sideimg from "../img/side.png";
 import footimg from "../img/foot.png";
 import bns from "../img/bns.png";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 const treatmentsData = [
   {
@@ -62,8 +64,32 @@ const treatmentsData = [
 
 function Treatments() {
   const [showMore, setShowMore] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const gridRef = useRef(null);
+
   const itemsToShow = showMore ? treatmentsData : treatmentsData.slice(0, 4);
 
+  const handleButtonClick = (e) => {
+    e.preventDefault();
+    if (!showMore) {
+      // Save the current scroll position before expanding
+      setScrollPosition(window.scrollY);
+    }
+    setShowMore(!showMore);
+  };
+
+  useEffect(() => {
+    if (showMore && gridRef.current) {
+      // Optionally adjust max-height if needed
+      gridRef.current.style.maxHeight = `${gridRef.current.scrollHeight}px`;
+    } else {
+      // Collapse the content and restore the scroll position
+      if (gridRef.current) {
+        gridRef.current.style.maxHeight = "0";
+      }
+      window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+    }
+  }, [showMore, scrollPosition]);
   return (
     <div className="treatments" id="treatments">
       <div className="grid">
@@ -73,12 +99,19 @@ function Treatments() {
               <img className="grid__item-img" src={item.img} alt={item.title} />
             </div>
             <div className="grid__item-title">{item.title}</div>
-            <div className="grid__item-description">{item.description}</div>
+            <div className="grid__item-description" id="here">
+              {item.description}
+            </div>
           </div>
         ))}
       </div>
+
       {treatmentsData.length > 4 && (
-        <a className="show-more-btn" onClick={() => setShowMore(!showMore)}>
+        <a
+          href={showMore ? "#here" : undefined} // Add href only when showMore is true
+          className="show-more-btn"
+          onClick={handleButtonClick}
+        >
           {showMore ? "Show Less" : "Show More"}
         </a>
       )}
