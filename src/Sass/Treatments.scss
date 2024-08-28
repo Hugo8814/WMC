@@ -71,6 +71,10 @@
       width: 100%;
       text-align: center;
       text-wrap: normal;
+      height: 56px;
+      @media (max-width: 1200px) {
+        height: fit-content;
+      }
       @media (max-width: 475px) {
         font-size: 2rem;
       }
