@@ -1,11 +1,10 @@
 function Header() {
-  
   return (
     <div className="header" id="header">
       <div className="header__img">
         <div className="header__Box">
           <h1 className="header__Box-title">
-            Welcome to Welcome Massage Centre
+            Welcome to Welfare Massage Centre
           </h1>
           <h2 className="header__Box-subtitle">
             Specialising in hotStone massage, EFT, Swedish Massage & Reflexology
