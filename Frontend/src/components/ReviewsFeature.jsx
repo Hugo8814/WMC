@@ -56,7 +56,7 @@ function ReviewsFeature() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch("https://hugo8814.github.io/modal/data.json");
+        const res = await fetch("https://www.welfaremc.co.uk/data.json");
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
         }
