@@ -4,7 +4,15 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 5% 0;
+  padding: 6rem 0;
+
+  @media (max-width: 768px) {
+    padding: 4rem 0;
+  }
+
+  @media (max-width: 500px) {
+    padding: 3rem 0;
+  }
 }
 
 .header {
@@ -12,44 +20,106 @@
     display: flex;
     gap: 5rem;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      gap: 3rem;
+    }
+
+    @media (max-width: 500px) {
+      gap: 2rem;
+      flex-direction: column;
+      width: 100%;
+      padding: 0 2rem;
+    }
 
     &-BookNow {
       font-family: "Comfortaa", sans-serif;
       font-weight: 700;
-      padding: 1.3rem 3rem;
+      padding: 1.5rem 4rem;
       border: solid 3px var(--pink);
       font-size: 2.5rem;
-      border-radius: 0.5rem;
+      border-radius: 5rem;
       background-color: var(--pink);
       color: white;
       text-decoration: none;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      box-shadow: 0 4px 15px rgba(191, 0, 116, 0.3);
+      cursor: pointer;
+
+      &:hover {
+        background-color: #d6008a;
+        border-color: #d6008a;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(191, 0, 116, 0.4);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
 
       @media (max-width: 1200px) {
-        padding: 1.2rem 2.5rem;
+        padding: 1.3rem 3rem;
         font-size: 2rem;
       }
 
-      @media (max-width: 425px) {
-        font-size: 1.5rem;
+      @media (max-width: 768px) {
+        padding: 1.2rem 2.5rem;
+        font-size: 1.8rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 1.7rem;
+        padding: 1.3rem 3rem;
+        width: 100%;
+        max-width: 30rem;
       }
     }
 
     &-viewall {
       font-family: "Comfortaa", sans-serif;
       font-weight: 700;
-      padding: 1.3rem 3rem;
+      padding: 1.5rem 4rem;
       border: solid 3px var(--teal);
       font-size: 2.5rem;
-      border-radius: 0.5rem;
+      border-radius: 5rem;
       color: var(--teal);
       text-decoration: none;
-      background-color: transparent;
+      background-color: white;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      box-shadow: 0 4px 15px rgba(1, 121, 146, 0.2);
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--teal);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(1, 121, 146, 0.3);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+
       @media (max-width: 1200px) {
-        padding: 1.2rem 2.5rem;
+        padding: 1.3rem 3rem;
         font-size: 2rem;
       }
-      @media (max-width: 425px) {
-        font-size: 1.5rem;
+
+      @media (max-width: 768px) {
+        padding: 1.2rem 2.5rem;
+        font-size: 1.8rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 1.7rem;
+        padding: 1.3rem 3rem;
+        width: 100%;
+        max-width: 30rem;
       }
     }
 
@@ -58,19 +128,35 @@
       line-height: 1.28;
       font-family: "Comfortaa", sans-serif;
       font-weight: 700;
-      padding: 1.3rem 3rem;
-      border-radius: 0.5rem;
-      border: solid 1px white;
+      padding: 1.5rem 4rem;
+      border-radius: 5rem;
+      border: solid 3px white;
       font-size: 2.5rem;
       color: white;
       background-color: transparent;
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+
       @media (max-width: 1200px) {
-        padding: 1.2rem 2.5rem;
+        padding: 1.3rem 3rem;
         font-size: 2rem;
       }
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         padding: 1.2rem 2.5rem;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+      }
+      @media (max-width: 500px) {
+        padding: 1.3rem 3rem;
+        font-size: 1.7rem;
       }
     }
   }

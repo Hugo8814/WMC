@@ -5,10 +5,20 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   font-size: 62.5%; /* 1rem = 10px */
   font-family: "Comfortaa", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
 }
 
 /* For screens up to 1200px (Large desktops) */
@@ -60,3 +70,4 @@ html {
 @import "./Treatments.scss";
 @import "./Nav.scss";
 @import "./Bookbtn.scss";
+@import "./Accessibility.scss";

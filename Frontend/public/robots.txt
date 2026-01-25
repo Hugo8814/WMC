@@ -1,0 +1,9 @@
+# Robots.txt for Welfare Massage Centre
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.welfaremc.co.uk/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10

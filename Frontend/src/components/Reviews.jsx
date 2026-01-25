@@ -1,8 +1,10 @@
 function Reviews() {
   return (
-    <div className="reviews" id="reviews">
-      <div className="reviews__header">Reviews</div>
-    </div>
+    <section className="reviews" id="reviews" aria-labelledby="reviews-heading">
+      <h2 id="reviews-heading" className="reviews__header">
+        Customer Reviews
+      </h2>
+    </section>
   );
 }
 

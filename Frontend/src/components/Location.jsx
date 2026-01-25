@@ -1,8 +1,14 @@
 function Location() {
   return (
-    <div className="location" id="location">
+    <section
+      className="location"
+      id="location"
+      aria-labelledby="location-heading"
+    >
       <div className="location__header">
-        <div className="location__header-text">LOCATION</div>
+        <h2 id="location-heading" className="location__header-text">
+          Our Location in Ashford
+        </h2>
       </div>
       <div className="map">
         <div className="map__img">
@@ -15,10 +21,12 @@ function Location() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            title="Welfare Massage Centre location map - 59 High Street, Ashford TN24 8SG"
+            aria-label="Google Maps showing Welfare Massage Centre location in Ashford"
           ></iframe>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

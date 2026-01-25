@@ -15,6 +15,18 @@
     font-weight: 700;
     color: white;
     margin: 5rem 0 7rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    // Ensure h2 inherits styles
+    h2 {
+      margin: 0;
+      padding: 0 2rem;
+      font-size: inherit;
+      font-weight: inherit;
+      color: inherit;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
     @media (max-width: 1024px) {
       height: 10rem;
       font-size: 6rem;
@@ -22,10 +34,12 @@
     @media (max-width: 768px) {
       height: 8rem;
       font-size: 5rem;
+      margin: 4rem 0 5rem 0;
     }
     @media (max-width: 425px) {
-      height: 6rem;
-      font-size: 4rem;
+      height: 7rem;
+      font-size: 3.5rem;
+      margin: 3rem 0 4rem 0;
     }
   }
 }
@@ -51,6 +65,19 @@
     width: 100%;
     background-color: #f3f3f3;
     padding: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      padding: 2rem 1.5rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 425px) {
+      padding: 1.5rem 1rem;
+    }
   }
 
   &__text {
@@ -112,6 +139,18 @@
     font-family: sans-serif;
     font-size: 2rem;
     font-weight: 600;
+    margin: 0;
+    padding: 0;
+
+    // Ensure h3 inherits styles
+    h3 {
+      margin: 0;
+      padding: 0;
+      font-size: inherit;
+      font-weight: inherit;
+      font-family: inherit;
+    }
+
     @media (max-width: 425px) {
       font-size: 1.6rem;
     }
@@ -136,14 +175,29 @@
     font-weight: 800;
     border: none;
     font-size: 1.4rem;
-    padding: 1rem;
+    padding: 1.2rem 1.5rem;
     border-radius: 0.5rem;
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+
+    &:hover {
+      background-color: #1565c0;
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      width: 18rem;
+      font-size: 1.3rem;
+      padding: 1rem 1.2rem;
+    }
 
     @media (max-width: 425px) {
-      font-size: 1.1rem;
-      width: 15rem;
+      font-size: 1.2rem;
+      width: 16rem;
       padding: 1rem;
     }
   }
@@ -248,11 +302,30 @@
     padding: 2rem 3rem;
     background-color: #f3f3f3;
     border-radius: 1rem;
-    scroll-snap-align: end; /* Ensure each review card snaps to start */
+    scroll-snap-align: start; /* Changed from end to start for better behavior */
     scroll-snap-stop: always; /* Ensure it fully stops on snap */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      min-width: 22rem;
+      padding: 2rem 2rem;
+    }
 
     @media (max-width: 425px) {
       padding: 1.5rem 1.5rem;
+      min-width: 20rem;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 375px) {
       min-width: 18rem;
     }
 
@@ -274,7 +347,20 @@
 
     &__text {
       font-size: 1.5rem;
-      line-height: 1.7rem;
+      line-height: 1.8;
+      color: #333;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+
+      @media (max-width: 768px) {
+        font-size: 1.4rem;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 1.3rem;
+        line-height: 1.5;
+      }
     }
 
     &__Tbox {

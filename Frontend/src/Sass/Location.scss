@@ -24,16 +24,39 @@
       color: transparent;
       background: url(../img/reviews.png) no-repeat center center;
       background-size: cover;
-      -webkit-background-clip: text; /* For webkit browsers */
-      background-clip: text; /* Standard property */
+      -webkit-background-clip: text;
+      background-clip: text;
+      margin: 0;
+      padding: 0 2rem;
+      text-align: center;
+
+      // Ensure h2 inherits styles
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+        background: inherit;
+        -webkit-background-clip: inherit;
+        background-clip: inherit;
+      }
+
       @media (max-width: 1024px) {
         font-size: 6rem;
       }
       @media (max-width: 768px) {
         font-size: 5rem;
       }
+      @media (max-width: 500px) {
+        font-size: 3.5rem;
+        line-height: 1.2;
+      }
       @media (max-width: 425px) {
-        font-size: 4rem;
+        font-size: 3.2rem;
+      }
+      @media (max-width: 375px) {
+        font-size: 2.8rem;
       }
     }
   }

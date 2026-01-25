@@ -91,31 +91,47 @@ function Treatments() {
     }
   }, [showMore, scrollPosition]);
   return (
-    <div className="treatments" id="treatments">
-      <div className="grid">
+    <section
+      className="treatments"
+      id="treatments"
+      aria-labelledby="treatments-heading"
+    >
+      <h2 id="treatments-heading" className="sr-only">
+        Our Massage Treatments
+      </h2>
+      <div className="grid" role="list">
         {itemsToShow.map((item, index) => (
-          <div className="grid__item" key={index}>
+          <article className="grid__item" key={index} role="listitem">
             <div className="grid__item__imgBox">
-              <img className="grid__item-img" src={item.img} alt={item.title} />
+              <img
+                className="grid__item-img"
+                src={item.img}
+                alt={`${item.title} therapy at Welfare Massage Centre Ashford`}
+                loading="lazy"
+              />
             </div>
-            <div className="grid__item-title">{item.title}</div>
-            <div className="grid__item-description" id="here">
+            <h3 className="grid__item-title">{item.title}</h3>
+            <p className="grid__item-description" id="here">
               {item.description}
-            </div>
-          </div>
+            </p>
+          </article>
         ))}
       </div>
 
       {treatmentsData.length > 4 && (
-        <a
-          href={showMore ? "#here" : undefined} // Add href only when showMore is true
+        <button
+          type="button"
           className="show-more-btn"
           onClick={handleButtonClick}
+          aria-expanded={showMore}
+          aria-label={
+            showMore ? "Show less treatments" : "Show more treatments"
+          }
         >
           {showMore ? "Show Less" : "Show More"}
-        </a>
+        </button>
       )}
-    </div>
+    </section>
   );
 }
 

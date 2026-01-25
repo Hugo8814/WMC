@@ -1,0 +1,79 @@
+/* SEO and Accessibility Utilities */
+
+/* Screen reader only text - visually hidden but accessible to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focus visible for keyboard navigation - improves accessibility */
+*:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+/* Skip to main content link for accessibility */
+.skip-to-main {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-to-main:focus {
+  top: 0;
+}
+
+/* Ensure footer links are visible and accessible */
+footer {
+  a {
+    color: #017992;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+      color: #bf0074;
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+    color: #333;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/* Fix for semantic HTML elements that might inherit unwanted styles */
+address {
+  font-style: normal;
+}
+
+/* Ensure main content has proper structure */
+main {
+  display: block;
+  width: 100%;
+}
+
+/* Responsive improvements for sections */
+section {
+  display: block;
+  width: 100%;
+}
